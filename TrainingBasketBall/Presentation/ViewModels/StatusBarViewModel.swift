@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 class StatusBarViewModel: ObservableObject {
     
@@ -45,13 +46,15 @@ class StatusBarViewModel: ObservableObject {
     }
     
     private func updateConnectionStatus(connectionStatus: MachineStatus, chargingStatus: CharginfStatus) {
-        switch connectionStatus {
-        case .connecting:
-            self.connectionStatus = .connecting
-        case .connected:
-            self.connectionStatus = .connected(chargingStatus: chargingStatus)
-        case .failed:
-            self.connectionStatus = .failed
+        withAnimation {
+            switch connectionStatus {
+            case .connecting:
+                self.connectionStatus = .connecting
+            case .connected:
+                self.connectionStatus = .connected(chargingStatus: chargingStatus)
+            case .failed:
+                self.connectionStatus = .failed
+            }
         }
     }
 }
