@@ -95,9 +95,12 @@
 		3661AA392CAD4DF000410721 /* TrainingBasketBall */ = {
 			isa = PBXGroup;
 			children = (
+				3661AA6D2CAD528B00410721 /* Ressources */,
+				3661AA672CAD521B00410721 /* Presentation */,
+				3661AA662CAD521500410721 /* Data */,
+				3661AA652CAD520E00410721 /* Domain */,
 				3661AA3A2CAD4DF000410721 /* TrainingBasketBallApp.swift */,
 				3661AA3C2CAD4DF000410721 /* ContentView.swift */,
-				3661AA3E2CAD4DF100410721 /* Assets.xcassets */,
 				3661AA402CAD4DF100410721 /* TrainingBasketBall.entitlements */,
 				3661AA412CAD4DF100410721 /* Preview Content */,
 			);
@@ -127,6 +130,75 @@
 				3661AA582CAD4DF200410721 /* TrainingBasketBallUITestsLaunchTests.swift */,
 			);
 			path = TrainingBasketBallUITests;
+			sourceTree = "<group>";
+		};
+		3661AA652CAD520E00410721 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3661AA692CAD524D00410721 /* UseCases */,
+				3661AA682CAD524100410721 /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3661AA662CAD521500410721 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3661AA6A2CAD525C00410721 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3661AA672CAD521B00410721 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3661AA6C2CAD528000410721 /* Views */,
+				3661AA6B2CAD527600410721 /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3661AA682CAD524100410721 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		3661AA692CAD524D00410721 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3661AA6A2CAD525C00410721 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3661AA6B2CAD527600410721 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3661AA6C2CAD528000410721 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3661AA6D2CAD528B00410721 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				3661AA3E2CAD4DF100410721 /* Assets.xcassets */,
+			);
+			path = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,8 +504,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -470,8 +541,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
