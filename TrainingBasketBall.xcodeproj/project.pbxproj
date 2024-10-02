@@ -14,6 +14,15 @@
 		3661AA4D2CAD4DF200410721 /* TrainingBasketBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661AA4C2CAD4DF200410721 /* TrainingBasketBallTests.swift */; };
 		3661AA572CAD4DF200410721 /* TrainingBasketBallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661AA562CAD4DF200410721 /* TrainingBasketBallUITests.swift */; };
 		3661AA592CAD4DF200410721 /* TrainingBasketBallUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661AA582CAD4DF200410721 /* TrainingBasketBallUITestsLaunchTests.swift */; };
+		3661AA712CAD537300410721 /* ConnectionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661AA702CAD537300410721 /* ConnectionStatus.swift */; };
+		3661AA732CAD618400410721 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661AA722CAD618400410721 /* StatusBarView.swift */; };
+		3661AA752CAD6C1200410721 /* StatusBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661AA742CAD6C1200410721 /* StatusBarViewModel.swift */; };
+		3661AA772CAD85C500410721 /* StatusTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661AA762CAD85C500410721 /* StatusTextView.swift */; };
+		3661AA792CAD88BD00410721 /* GetStatusUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661AA782CAD88BD00410721 /* GetStatusUseCase.swift */; };
+		3661AA7C2CAD897900410721 /* MachineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661AA7B2CAD897900410721 /* MachineService.swift */; };
+		3661AA7E2CAD91E700410721 /* BatteryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661AA7D2CAD91E700410721 /* BatteryInfo.swift */; };
+		3661AA802CAD9E4E00410721 /* BatteryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661AA7F2CAD9E4E00410721 /* BatteryMonitor.swift */; };
+		3661AA822CAD9EBE00410721 /* GetBatteryStatusUseCase .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661AA812CAD9EBE00410721 /* GetBatteryStatusUseCase .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,15 @@
 		3661AA522CAD4DF200410721 /* TrainingBasketBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainingBasketBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3661AA562CAD4DF200410721 /* TrainingBasketBallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingBasketBallUITests.swift; sourceTree = "<group>"; };
 		3661AA582CAD4DF200410721 /* TrainingBasketBallUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingBasketBallUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3661AA702CAD537300410721 /* ConnectionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStatus.swift; sourceTree = "<group>"; };
+		3661AA722CAD618400410721 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
+		3661AA742CAD6C1200410721 /* StatusBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarViewModel.swift; sourceTree = "<group>"; };
+		3661AA762CAD85C500410721 /* StatusTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTextView.swift; sourceTree = "<group>"; };
+		3661AA782CAD88BD00410721 /* GetStatusUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStatusUseCase.swift; sourceTree = "<group>"; };
+		3661AA7B2CAD897900410721 /* MachineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MachineService.swift; sourceTree = "<group>"; };
+		3661AA7D2CAD91E700410721 /* BatteryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryInfo.swift; sourceTree = "<group>"; };
+		3661AA7F2CAD9E4E00410721 /* BatteryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryMonitor.swift; sourceTree = "<group>"; };
+		3661AA812CAD9EBE00410721 /* GetBatteryStatusUseCase .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GetBatteryStatusUseCase .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +113,10 @@
 		3661AA392CAD4DF000410721 /* TrainingBasketBall */ = {
 			isa = PBXGroup;
 			children = (
-				3661AA6D2CAD528B00410721 /* Ressources */,
-				3661AA672CAD521B00410721 /* Presentation */,
-				3661AA662CAD521500410721 /* Data */,
 				3661AA652CAD520E00410721 /* Domain */,
+				3661AA662CAD521500410721 /* Data */,
+				3661AA672CAD521B00410721 /* Presentation */,
+				3661AA6D2CAD528B00410721 /* Ressources */,
 				3661AA3A2CAD4DF000410721 /* TrainingBasketBallApp.swift */,
 				3661AA3C2CAD4DF000410721 /* ContentView.swift */,
 				3661AA402CAD4DF100410721 /* TrainingBasketBall.entitlements */,
@@ -144,6 +162,7 @@
 		3661AA662CAD521500410721 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3661AA7A2CAD894B00410721 /* Services */,
 				3661AA6A2CAD525C00410721 /* Repository */,
 			);
 			path = Data;
@@ -161,6 +180,8 @@
 		3661AA682CAD524100410721 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				3661AA702CAD537300410721 /* ConnectionStatus.swift */,
+				3661AA7D2CAD91E700410721 /* BatteryInfo.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -168,6 +189,8 @@
 		3661AA692CAD524D00410721 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				3661AA782CAD88BD00410721 /* GetStatusUseCase.swift */,
+				3661AA812CAD9EBE00410721 /* GetBatteryStatusUseCase .swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -182,6 +205,7 @@
 		3661AA6B2CAD527600410721 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				3661AA742CAD6C1200410721 /* StatusBarViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -189,6 +213,8 @@
 		3661AA6C2CAD528000410721 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3661AA722CAD618400410721 /* StatusBarView.swift */,
+				3661AA762CAD85C500410721 /* StatusTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +225,15 @@
 				3661AA3E2CAD4DF100410721 /* Assets.xcassets */,
 			);
 			path = Ressources;
+			sourceTree = "<group>";
+		};
+		3661AA7A2CAD894B00410721 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3661AA7B2CAD897900410721 /* MachineService.swift */,
+				3661AA7F2CAD9E4E00410721 /* BatteryMonitor.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,7 +367,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3661AA3D2CAD4DF000410721 /* ContentView.swift in Sources */,
+				3661AA792CAD88BD00410721 /* GetStatusUseCase.swift in Sources */,
+				3661AA822CAD9EBE00410721 /* GetBatteryStatusUseCase .swift in Sources */,
+				3661AA7E2CAD91E700410721 /* BatteryInfo.swift in Sources */,
 				3661AA3B2CAD4DF000410721 /* TrainingBasketBallApp.swift in Sources */,
+				3661AA772CAD85C500410721 /* StatusTextView.swift in Sources */,
+				3661AA802CAD9E4E00410721 /* BatteryMonitor.swift in Sources */,
+				3661AA752CAD6C1200410721 /* StatusBarViewModel.swift in Sources */,
+				3661AA7C2CAD897900410721 /* MachineService.swift in Sources */,
+				3661AA732CAD618400410721 /* StatusBarView.swift in Sources */,
+				3661AA712CAD537300410721 /* ConnectionStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +548,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -541,7 +585,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeLeft;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
